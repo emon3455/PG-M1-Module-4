@@ -1,4 +1,4 @@
-nav ul{
+nav > ul{
     display: flex;
 }
 
@@ -6,14 +6,29 @@ nav li{
     list-style: none;
     margin-right: 2rem;
     padding: 0 10px;
+    background-color: bisque;
 }
 
 nav li:hover{
    background-color: #bb9646;
+   
 }
 
 nav a{
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
+    padding: 1rem;
+}
+
+/* nested navigation */
+
+nav li > .nested{
+    display: none;
+    position: absolute;
+}
+
+nav li:hover > .nested{
+    display: block;
+      
 }
